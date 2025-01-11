@@ -1,0 +1,13 @@
+﻿@using PhillyNews.ViewModels
+@using PhillyNews.Models
+
+@model ArticleWidgetViewModel
+
+<div class="container">
+
+		@foreach (ArticleCard card in Model.articleCards)
+		{
+			@Html.Partial("_ArticleCard", card)
+		}
+
+</div>
