@@ -8,8 +8,8 @@ html {
   }
 }
 
-h1, h5, p {
-    font-family: monospace;
+* {
+    font-family: 'Times New Roman';
 }
 
 .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
