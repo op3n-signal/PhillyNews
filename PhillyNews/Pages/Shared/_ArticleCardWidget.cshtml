@@ -5,9 +5,15 @@
 
 <div class="container">
 
+	@if(Model.articleCards.Count > 0) {
+		<div>
 		@foreach (ArticleCard card in Model.articleCards)
 		{
 			@Html.Partial("_ArticleCard", card)
 		}
-
+		</div>
+	}
+	else {
+		<p class="text-center">Articles coming soon.</p>
+	}
 </div>

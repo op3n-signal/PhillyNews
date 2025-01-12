@@ -2,8 +2,7 @@
 {
     public class ArticleCard
     {
+        public string Slug { get; set; }
         public string Title { get; set; }
-
-        public string Preview_Text { get; set; }
     }
 }
