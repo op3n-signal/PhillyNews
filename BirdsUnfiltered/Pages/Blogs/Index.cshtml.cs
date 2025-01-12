@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace BirdsUnfiltered.Pages.Articles
+namespace BirdsUnfiltered.Pages.Blogs
 {
     public class ArticlesModel : PageModel
     {

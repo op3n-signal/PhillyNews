@@ -13,7 +13,7 @@ namespace BirdsUnfiltered.ViewModels
 
         public void Load()
         {
-            blogCards = CommonLists.BlogCards;
+            blogCards = CommonLists.BlogCards.OrderByDescending(card => card.Date_Created).ToList();
         }
     }
 }

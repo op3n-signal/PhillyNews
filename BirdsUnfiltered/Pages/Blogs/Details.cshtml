@@ -1,12 +1,15 @@
 ﻿@page "/blogs/{slug}"
-@model BirdsUnfiltered.Pages.Articles.DetailsModel
+
+@using BirdsUnfiltered.Pages.Blogs
+
+@model DetailsModel
 @{
 }
 
 <div class="container">
 	<div class="row">
 		<div class="col-8">
-			@Html.Partial("Shared/Partials/_Blog", Model.ArticleDetailsViewModel)
+			@Html.Partial("Shared/Partials/_Blog", Model.BlogDetailsViewModel)
 		</div>
 		<div class="col-3">
 			<!--add a subscribe thing-->

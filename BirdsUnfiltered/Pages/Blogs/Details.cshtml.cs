@@ -2,23 +2,23 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using BirdsUnfiltered.ViewModels;
 
-namespace BirdsUnfiltered.Pages.Articles
+namespace BirdsUnfiltered.Pages.Blogs
 {
     public class DetailsModel : PageModel
     {
-        public BlogDetailsViewModel ArticleDetailsViewModel { get; set; }
+        public BlogDetailsViewModel BlogDetailsViewModel { get; set; }
 
         [BindProperty(SupportsGet = true)]
         public string Slug { get; set; }
 
         public DetailsModel()
         {
-            ArticleDetailsViewModel = new BlogDetailsViewModel();
+            BlogDetailsViewModel = new BlogDetailsViewModel();
         }
 
         public void OnGet()
         {
-            ArticleDetailsViewModel.Load(Slug);
+            BlogDetailsViewModel.Load(Slug);
         }
     }
 }

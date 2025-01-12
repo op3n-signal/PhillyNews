@@ -2,6 +2,6 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 300px));
     gap: 15px;
-    grid-auto-rows: minmax(90px, auto);
+    grid-auto-rows: minmax(60px, auto); /*hard code the min for now*/
     justify-content: center;
 }
