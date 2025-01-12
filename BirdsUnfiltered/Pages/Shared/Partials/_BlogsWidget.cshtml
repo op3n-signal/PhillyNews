@@ -1,0 +1,19 @@
+﻿@using BirdsUnfiltered.ViewModels
+@using BirdsUnfiltered.Models
+
+@model BlogWidgetViewModel
+
+<div class="container">
+
+	@if(Model.blogCards.Count > 0) {
+		<div class="blog-widget-grid">
+			@foreach (BlogCard card in Model.blogCards)
+			{
+				@Html.Partial("Shared/Partials/_BlogCard", card)
+			}
+		</div>
+	}
+	else {
+		<p class="text-center">Blogs coming soon.</p>
+	}
+</div>

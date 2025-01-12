@@ -1,0 +1,20 @@
+﻿.blog {
+    padding-top: 50px;
+}
+
+.blog-header {
+    padding-bottom: 5%;
+}
+
+h1 {
+    font-weight: 600;
+}
+
+.blog-content-media {
+    position: relative;
+    width: 100%;
+}
+
+.blog-content-text {
+    padding-top: 40px;
+}

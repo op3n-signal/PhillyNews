@@ -1,0 +1,7 @@
+.blog-widget-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 300px));
+    gap: 15px;
+    grid-auto-rows: minmax(90px, auto);
+    justify-content: center;
+}

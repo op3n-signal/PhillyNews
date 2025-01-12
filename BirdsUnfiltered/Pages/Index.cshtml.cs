@@ -1,23 +1,23 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using PhillyNews.ViewModels;
+using BirdsUnfiltered.ViewModels;
 
-namespace PhillyNews.Pages
+namespace BirdsUnfiltered.Pages
 {
     public class IndexModel : PageModel
     {
         private readonly ILogger<IndexModel> _logger;
-        public ArticleWidgetViewModel ArticleWidgetViewModel { get; set; }
+        public BlogWidgetViewModel BlogWidgetViewModel { get; set; }
 
         public IndexModel(ILogger<IndexModel> logger)
         {
             _logger = logger;
-            ArticleWidgetViewModel = new ArticleWidgetViewModel();
+            BlogWidgetViewModel = new BlogWidgetViewModel();
         }
 
         public void OnGet()
         {
-            ArticleWidgetViewModel.Load();
+            BlogWidgetViewModel.Load();
         }
     }
 }

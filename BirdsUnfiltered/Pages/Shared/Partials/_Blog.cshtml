@@ -1,0 +1,25 @@
+﻿@using BirdsUnfiltered.ViewModels
+
+@model BlogDetailsViewModel
+<div class="blog">
+	<article>
+		<div class="blog-header">
+			<div class="blog-header-headline">
+				<h1>@Model.Blog.Title</h1>
+			</div>
+			<div class="blog-header-meta">
+				• Published @Model.Blog.Date_Created.ToString("MMMM dd, yyyy ")
+			</div>
+		</div>
+		<section class="blog-content">
+			<!--For now just use the first image-->
+			<figure class="blog-content-media-wrapper">
+				<img class="blog-content-media" src="@Model.Blog.Media.First().Media_Path" />
+				<figcaption>@Model.Blog.Media.First().Caption</figcaption>
+			</figure>
+			<div class="blog-content-text">
+				<p>@Html.Raw(Model.Blog.Body)</p>
+			</div>
+		</section>
+	</article>
+</div>

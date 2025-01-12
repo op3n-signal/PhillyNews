@@ -1,0 +1,16 @@
+﻿@using BirdsUnfiltered.Models
+
+@model BlogCard
+
+<div class="article-card-wrapper">
+		<div class="article-card">
+			<div class="article-card-body">
+				<div class="article-card-date">
+					<span class="article-date-prefix-dot">• </span> @Model.Date_Created.ToString("MMM dd").ToUpper()
+				</div>
+				<a asp-page="/Blogs/Details" asp-route-slug="@Model.Slug">
+					<h5 class="article-card-title">@Model.Title</h5>
+				</a>
+			</div>
+		</div>
+</div>

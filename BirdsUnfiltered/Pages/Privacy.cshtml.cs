@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace PhillyNews.Pages
+namespace BirdsUnfiltered.Pages
 {
     public class PrivacyModel : PageModel
     {

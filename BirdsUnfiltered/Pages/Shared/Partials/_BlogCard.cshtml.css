@@ -1,0 +1,25 @@
+﻿* {
+    font-size: 1em;
+    font-weight: 600;
+}
+
+
+.article-card-wrapper {
+    border-bottom: solid 0.1px rgb(204, 204, 204);
+}
+
+.article-card-date {
+    font-family: monospace;
+    font-size: 0.8em;
+    color: rgb(65, 65, 65);
+}
+
+.article-date-prefix-dot {
+    vertical-align: middle;
+    font-size: 8px;
+}
+
+.article-card-title {
+    font-family: 'Times New Roman';
+    color: black;
+}
